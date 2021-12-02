@@ -1,0 +1,13 @@
+{
+    "Prefix": ".",
+    "İnvitePrefix":".",
+    "developers":"707325480378040430",
+    "DatabaseUrl": "mongodb+srv://Satuke:satuke2014@cluster0.khmea.mongodb.net/ShivaModeration?retryWrites=true&w=majority",
+    "DatabaseName": "Shiva",
+    "Status":"Time never comes again.",
+    "Footer":"1784 ❤️ Satukê.",
+    "TagVarYok":true,
+    "name_age":true,
+    "EmbedColor": "2F3136",
+    "VoiceChannel":"915176063154393118"   
+}
