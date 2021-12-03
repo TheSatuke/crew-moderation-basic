@@ -67,12 +67,12 @@ client.on("guildMemberAdd", async member => {
           fake: 1
         });
         newInviter.save().then(x => {
-          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.name == member.guild.id ? member.guild.name : inviter}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
+          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? member.guild.name : inviter.tag}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
         });
       } else {
         inviterData.fake++
         inviterData.save().then(x => {
-          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.name == member.guild.id ? "Vanity Url" : inviter}\`,  Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
+          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? "Vanity Url" : inviter.tag}\`,  Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
         });
       };
     });
@@ -89,12 +89,12 @@ client.on("guildMemberAdd", async member => {
             fake: 0
           });
           newInviter.save().then(x => {
-            if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.name == member.guild.id ? member.guild.name : inviter}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
+            if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? member.guild.name : inviter.tag}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
           });
         } else {
           inviterData.regular++;
           inviterData.save().then(x => {
-            if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.name == member.guild.id ? member.guild.name : inviter}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
+            if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? member.guild.name : inviter.tag}\`, Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
           });
         };
       });
