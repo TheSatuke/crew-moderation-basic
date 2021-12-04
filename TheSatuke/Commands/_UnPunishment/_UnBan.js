@@ -19,10 +19,9 @@ return message.lineReply(`${Settings.emojiler.iptal} Bu komudu kullanmaya yetkin
 let victim = await client.users.fetch(args[0]);
 
 if(!victim) return message.lineReply(`${Settings.emojiler.iptal} ${message.author} yasaklı olan bir id belirt.`)
-let document = await PM.addPenal(victim.id, message.author.id, PM.Types.UNBAN);
 
 message.guild.members.unban(victim.id)
-message.lineReply(`${Settings.emojiler.tik} ${victim} adlı kullanıcının sunucu yasağı kaldırıldı. (\`#${document.Id}\`)`)
+message.lineReply(`${Settings.emojiler.tik} ${victim} adlı kullanıcının sunucu yasağı kaldırıldı.`)
   
 message.react(Settings.emojiler.onayID)
 
