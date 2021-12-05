@@ -12,7 +12,7 @@ module.exports.execute = async (client, message, args) => {
     let tag = "Shiva"
     let tag2 = "Shivâ"
     let tag3 = "SHIVA"
-    let tag4 = "SHİVA"
+    let tag4 = "?"
     let tag5 = `1784`
     let etiket = "1784"
 
