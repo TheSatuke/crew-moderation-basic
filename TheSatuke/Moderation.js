@@ -273,7 +273,7 @@ client.on("userUpdate", async function(oldUser, newUser) { // kod codaredan alı
 )
 
 client.on("userUpdate", async function(oldUser, newUser) { // kod codaredan alınıp editlenmiştir!
-  let tag = (`*`)
+  let tag = (`?`)
   const roleID = (Settings.Tag.Role)
   const guildID = (Settings.Server.Id)
   const log3 = Settings.Tag.Log
