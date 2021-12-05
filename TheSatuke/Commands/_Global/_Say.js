@@ -17,7 +17,7 @@ module.exports.execute = async (client, message, args) => {
     var Tagges3 = message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.username.includes("shivâ")).size;
     var Tagges4 = message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.username.includes("Shivâ")).size;
     var Tagges6 = message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.username.includes("1784")).size;
-    var Tagges7 = message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.username.includes(`SHIVA`)).size;
+    var Tagges7 = message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.username.includes(`?`)).size;
     var Tagges5 =  message.guild.members.cache.filter(s => !s.bot).filter(member => member.user.discriminator == "1784").size;
 
 const Embed = new MessageEmbed()
