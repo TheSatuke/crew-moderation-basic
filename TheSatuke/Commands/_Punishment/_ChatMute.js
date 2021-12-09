@@ -50,7 +50,7 @@ module.exports.execute = async (client, message, args) => {
     message.channel.send(`${victim},  ${message.author} tarafından **__${reason}__** sebebiyle geçici olarak metin kanallarında susturuldu, Ceza Numarası - (\`#${document.Id}\`) ${Settings.emojiler.tik}`)
     message.react(Settings.emojiler.onayID)
 
-    let logKanali = client.channels.cache.find(a => a.name == Settings.Penals.Mute.Log)
+    let logKanali = client.channels.cache.find(a => a.id == Settings.Penals.Mute.Log)
     const embed = new Discord.MessageEmbed()
     .setDescription(`${victim} Kullanıcısı, ${message.author} tarafından **Chat Mute** adlı ceza ile cezalandırıldı.`)
     .addField(`Ceza Numarası`,`${document.Id}`, true)
