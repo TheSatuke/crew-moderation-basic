@@ -43,7 +43,7 @@ module.exports.execute = async (client, message, args) => {
     let cıkaralım = time + Date.parse(new Date());
     let şuanki = moment(Date.now()).format("LLL");
     let sonraki = moment(cıkaralım).format("LLL");
-    let logKanali = client.channels.cache.find(a => a.name == Settings.Penals.Ban.Log)
+    let logKanali = client.channels.cache.find(a => a.id == Settings.Penals.Ban.Log)
 
     const embed = new Discord.MessageEmbed()
     .setDescription(`${victim} Kullanıcısı, ${message.author} tarafından **Ban** adlı ceza ile cezalandırıldı.`)
