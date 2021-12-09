@@ -50,7 +50,7 @@ let cıkaralım = time + Date.parse(new Date());
 let şuanki = moment(Date.now()).format("LLL");
 let sonraki = moment(cıkaralım).format("LLL");
 
-let logKanali = client.channels.cache.find(a => a.name == Settings.Penals.VoiceMute.Log)
+let logKanali = client.channels.cache.find(a => a.id == Settings.Penals.VoiceMute.Log)
 const embed = new Discord.MessageEmbed()
 .setDescription(`${victim} Kullanıcısı, ${message.author} tarafından **Voice Mute** adlı ceza ile cezalandırıldı.`)
 .addField(`Ceza Numarası`,`${document.Id}`, true)
