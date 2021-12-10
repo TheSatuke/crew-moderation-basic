@@ -16,7 +16,7 @@ module.exports.execute = async (client, message, args) => {
     let tag5 = `1784`
     let etiket = "1784"
 
-    let rol = "915176014856994846"
+    let rol = "918993283240312853"
     let taglilar = message.guild.members.cache.filter(s => s.user.username.includes(tag) && !s.roles.cache.has(rol))
     let taglilar2 = message.guild.members.cache.filter(s => s.user.username.includes(tag2) && !s.roles.cache.has(rol))
     let taglilar3 = message.guild.members.cache.filter(s => s.user.username.includes(tag3) && !s.roles.cache.has(rol))
@@ -61,7 +61,7 @@ module.exports.execute = async (client, message, args) => {
     })
     tagsizlar.array().forEach(async(member, index) => {
         setTimeout(async() => {
-            await member.roles.set("915176014856994846")
+            await member.roles.set("918993283240312853")
         }, index * 1000)
     })
   
