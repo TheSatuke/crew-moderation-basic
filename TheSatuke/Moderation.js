@@ -113,7 +113,7 @@ client.on("message", async message => {
 });
 client.on("guildMemberAdd", member => {
 
-  member.roles.add(Settings.Roles.Unregistered);
+  member.roles.add("918992367183339528");
 
   require("moment-duration-format")
   
