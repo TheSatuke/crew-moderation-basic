@@ -15,7 +15,7 @@ let Member = message.guild.members.cache.filter(m => m.roles.cache.filter(r => r
 
 if(args[0] == "ver") {
 Member.forEach(r => {
-r.roles.add(Settings.Roles.Unregistered)
+r.roles.add("918992367183339528")
 })
 
 message.lineReply(`${Settings.emojiler.tik} Sunucuda rolü bulunmayan **${Member.size}** kişiye **Kayıtsız** rolü verildi`)
