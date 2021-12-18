@@ -10,7 +10,7 @@ module.exports.execute = async (client, message, args) => {
 
     var embed = new MessageEmbed().setAuthor(message.author.tag, message.author.avatarURL({dynamic: true})).setFooter(Config.Footer).setColor(Settings.Perm.Color)
     let tag = "Shiva"
-    let tag2 = "Shivâ"
+    let tag2 = "shivâ"
     let tag3 = "SHIVA"
     let tag4 = "?"
     let tag5 = `1784`
