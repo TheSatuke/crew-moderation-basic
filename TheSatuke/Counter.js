@@ -127,13 +127,13 @@ client.on("guildMemberRemove", async member => {
             if (inviterData.regular-1 >= 0) inviterData.regular--;
           };
           inviterData.save().then(x => {
-            if (inviteChannel) inviteChannel.send(`📤 \`${member.user.tag}\` Sunucudan ayrıldı`).catch(err => {});
+            if (inviteChannel) inviteChannel.send(`${elmas} \`${member.user.tag}\` Sunucudan ayrıldı`).catch(err => {});
           });
         };
       });
     } else {
 
-      if (inviteChannel) inviteChannel.send(`📤 \`${member.user.tag}\` Sunucudan ayrıldı`).catch(err => {});
+      if (inviteChannel) inviteChannel.send(`${elmas} \`${member.user.tag}\` Sunucudan ayrıldı`).catch(err => {});
     };
   });
 });
