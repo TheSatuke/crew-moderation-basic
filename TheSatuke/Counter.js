@@ -72,7 +72,7 @@ client.on("guildMemberAdd", async member => {
       } else {
         inviterData.fake++
         inviterData.save().then(x => {
-          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? "Vanity Url" : inviter.tag}\`,  Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
+          if (inviteChannel) inviteChannel.send(`${elmas} ${member} Sunucuya Katıldı, Davet eden kişi \`${inviter.id == member.guild.id ? member.guild.name : inviter.tag}\`,  Ulaştığı davet sayısı (\`${(x.regular ? x.regular : 0)+(x.bonus ? x.bonus : 0)}\`)`).catch(err => {});
         });
       };
     });
