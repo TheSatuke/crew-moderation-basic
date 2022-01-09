@@ -1,4 +1,4 @@
-{
+co{
   "name": "satuke-moderation",
   "version": "1.0.0",
   "description": "satuke",
@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "discord-buttons": "^4.0.0",
-    "mathjs": "^9.4.4","common-tags": "^1.8.0",
+    "mathjs": "^9.4.4",
     "debug": "^4.3.2",
     "discord-reply": "^0.1.2",
     "discord.js": "^12.5.3",
