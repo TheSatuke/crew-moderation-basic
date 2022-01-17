@@ -3,7 +3,6 @@ const Settings = require("../../Configuration/Settings.json");
 const teyitci = require("../../Models/Database/Teyitci");
 const kayitlar = require("../../Models/Database/Kayıtlar");
 const Config = require("../../Configuration/Config.json");
-const Text = require("../../Configuration/Text.json");
 
 module.exports.execute = async (client, message, args) => {
   
